@@ -8,10 +8,11 @@ using UnityEngine.Networking;
 public class PlayerController : NetworkBehaviour {
 	public GameObject bulletPrefab;
 	public Transform bulletSpawn;
-
+	public Camera myCamera;
 	// Use this for initialization
 	void Start () {
-		
+		Camera.main.tag = "";
+		myCamera.tag = "MainCamera";
 	}
 	
 	// Update is called once per frame
